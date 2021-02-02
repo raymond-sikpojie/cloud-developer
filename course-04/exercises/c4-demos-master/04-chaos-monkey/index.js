@@ -52,3 +52,4 @@ async function terminateInstance(instanceId) {
 
   console.log('Instance was terminated')
 }
+// 
