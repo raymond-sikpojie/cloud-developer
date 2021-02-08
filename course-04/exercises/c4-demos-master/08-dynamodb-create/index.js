@@ -10,7 +10,7 @@ exports.handler = async (event) => {
   console.log('Processing event: ', event)
   const itemId = uuid.v4()
 
-  const parsedBody = JSON.parse(event.body)
+  const parsedBody = event
 
   const newItem = {
     id: itemId,
@@ -25,7 +25,8 @@ exports.handler = async (event) => {
   return {
     statusCode: 201,
     headers: {
-      'Access-Control-Allow-Origin': '*'
+      'Access-Control-Allow-Origin': '*',
+      'Content-Type': 'application/json'
     },
     body: JSON.stringify({
       newItem
