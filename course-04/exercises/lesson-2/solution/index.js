@@ -56,7 +56,7 @@ exports.handler = async (event) => {
   }
 }
 
-/**
+/*
  * Get value of the limit parameter.
  *
  * @param {Object} event HTTP event passed to a Lambda function
