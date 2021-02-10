@@ -42,7 +42,7 @@ exports.handler = async (event) => {
 
   console.log('Result: ', result)
 
-  // Return result
+  //Return result
   return {
     statusCode: 200,
     headers: {
